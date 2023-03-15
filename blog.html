@@ -56,6 +56,39 @@
                 </p>
             </div>
         </section>
+        <section>
+            <h1 class="font-bold text-[45px] text-[#1090D8] text-center bg-sky-100">Analyzing the code and detailing how
+                it works</h1>
+
+            <div>
+                <h2 class="font-semibold text-[30px] text-[#1010D8] text-center mt-12 md:mx-16 lg:mx-16 bg-red-100">
+                    1: quizTimer function
+                </h2>
+                <p class="mt-6 md:mx-56 lg:mx-56 pl-4">
+                    The quick timer function takes a parameter and checks if it is true. If it is true, it clears the
+                    interval and returns. If the parameter is false, it sets an interval and captures an HTML element
+                    with the ID "count". It calculates the minutes and seconds from the count variable and formats them
+                    with leading zeroes if necessary. It then sets the innerHTML of the countHtml element to the
+                    formatted time with a subscript "sec" element. It increments the count variable and changes the text
+                    color every second. The interval runs every 1 second.
+                </p>
+            </div>
+            <div>
+                <h2 class="font-semibold text-[30px] text-[#1010D8] text-center mt-12 md:mx-16 lg:mx-16 bg-red-100">
+                    1: chooseQuiz
+                </h2>
+                <p class="mt-6 md:mx-56 lg:mx-56 pl-4">
+                    it checks if an answer for the specified quiz question already exists in the answers array by using
+                    the find() method.
+                    If an answer already exists, then uses a for...of loop to iterate through the answers array and find
+                    the object with a matching id property. Once the matching object is found, the function replaces it
+                    with a new object that has the updated givenAns property for the corresponding quiz question.
+                    If an answer does not exist, the function adds a new object to the answers array with the id and
+                    givenAns properties copied from the corresponding quiz question in quizData.
+                    Finally, the function calls the displayAnswers() function.
+                </p>
+            </div>
+        </section>
     </main>
 </body>
 

@@ -73,7 +73,7 @@ const displayQuiz = (data) => {
 };
 
 // EventListener for quiz submit button
-document.getElementById("submit").addEventListener("click", function () {
+document.getElementById("submit").addEventListener("click", () => {
   if (answers.length < 6) {
     return;
   }
@@ -110,7 +110,7 @@ document.getElementById("submit").addEventListener("click", function () {
   let storage = JSON.parse(localStorage.getItem("result"));
   if (storage) {
     localStorage.setItem(
-      "results",
+      "result",
       JSON.stringify([
         ...storage,
         {
@@ -122,7 +122,7 @@ document.getElementById("submit").addEventListener("click", function () {
     );
   } else {
     localStorage.setItem(
-      "results",
+      "result",
       JSON.stringify([
         {
           marks: totalMark,

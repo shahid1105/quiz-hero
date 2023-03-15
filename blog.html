@@ -6,10 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <h1>blog</h1>
+<body class="md:mx-52 lg:mx-52">
+    <header>
+        <h1 class="font-bold text-[45px] text-[#1090D8] text-center bg-sky-100">Some Questions And Answer For
+            Assignment-7</h1>
+    </header>
+    <main>
+        <section class="mb-6">
+            <div>
+                <h2 class="font-semibold text-[30px] text-[#1010D8] text-center mt-12 md:mx-16 lg:mx-16 bg-red-100">
+                    Q-1:map, forEach, filter, find
+                </h2>
+                <h2 class="font-semibold text-[30px] bg-sky-300 text-center mt-12 md:mx-16 lg:mx-16 bg-red-100">
+                    1.1: what’s the difference between map and forEach?
+                </h2>
+                <p class="mt-6 md:mx-56 lg:mx-56 pl-4">
+                    map and forEach almost same, the main deference between map and forEach , Map return a new array
+                    same length as the original array and forEach no return .
+                </p>
+                <h2 class="font-semibold text-[30px] bg-sky-300 text-center mt-12 md:mx-16 lg:mx-16 bg-red-100">
+                    1.2: what’s the difference between filter and find?
+                </h2>
+                <p class="mt-6 md:mx-56 lg:mx-56 pl-4">
+                    filter: Specifies the condition and returns all elements matching the condition.
+                    <br>
+                    find:Checks the condition and returns the first element matching the condition
+                </p>
+            </div>
+            <div>
+                <h2 class="font-semibold text-[30px] text-[#1010D8] text-center mt-12 md:mx-16 lg:mx-16 bg-red-100">
+                    Q-2:Difference between Local Storage, Session Storage, and Cookies?</h2>
+                <p class="mt-6 md:mx-56 lg:mx-56 pl-4">Local storage: The stored data is not deleted when the browser is
+                    closed.</p> <br>
+                <p class="mt-6 md:mx-56 lg:mx-56 pl-4">Session Storage: The data is stored only for the session and will
+                    be deleted when the browser is closed.</p> <br>
+                <p class="mt-6 md:mx-56 lg:mx-56 pl-4">Cookies: The data can be set to expire at a certain time.</p>
+            </div>
+            <div>
+                <h2 class="font-semibold text-[30px] text-[#1010D8] text-center mt-12 md:mx-16 lg:mx-16 bg-red-100">
+                    Q-3:What is event loop</h2>
+                <p class="mt-6 md:mx-56 lg:mx-56 pl-4">The Event Loop has one simple job — to monitor the Call Stack and
+                    the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the
+                    queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a
+                    tick in the Event Loop.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
